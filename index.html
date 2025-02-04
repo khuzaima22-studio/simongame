@@ -1,0 +1,45 @@
+ 
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Simon Game with Centered Dice</title>
+     <link rel="stylesheet" href="style.css"> <!-- To link with the external CSS file -->
+ </head>
+ <body>
+     <div class="game-container">
+      
+         <!-- Game instructions -->
+         <div class="instructions">
+             <h2>Welcome to the Simon Game!</h2>
+             <p>How to play:</p>
+             <ul>
+                 <li>The game will show you a sequence of flashing colors. Memorize the order.</li>
+                 <li>Click the buttons in the same order as the sequence.</li>
+                 <li>If you get it right, the sequence will grow longer. Keep playing as long as you can!</li>
+                 <li>If you make a mistake, the game is over. Press "Start" to try again.</li>
+             </ul>
+             <p>Good luck and have fun!</p>
+         </div>
+ 
+         <!-- Start button -->
+         <button id="start">Start</button>
+         <div id="score">Score: 0</div>
+         <!-- Game layout -->
+         <div class="simon-container">
+             <!-- Buttons for the Simon game -->
+             <div id="green" class="button green"></div>
+             <div id="red" class="button red"></div>
+             <div id="yellow" class="button yellow"></div>
+             <div id="blue" class="button blue"></div>
+         </div>
+         
+         <!-- Game status display -->
+         <h1 id="status">Press Start to Play</h1>
+     </div>
+ 
+     <script src="script.js"></script> <!-- Link to the external JavaScript file -->
+ </body>
+ </html>
+ 

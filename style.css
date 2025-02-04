@@ -1,0 +1,117 @@
+/* General styling for the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #282c34;
+    color: rgb(109, 60, 60);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background-image: url('hey.webp'); /* Set your background image here */
+    background-size: cover; /* Cover the entire screen */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Ensure the image doesn't repeat */
+    color: white;
+}
+
+#score {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+   
+    border: 1px solid gray;
+    padding: 6px;
+    border-radius: 5px;
+    background: white;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/* Container to center all content */
+.game-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    max-width: 600px;
+}
+
+/* Dice styling */
+.dice {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+/* Instructions styling */
+.instructions {
+    margin-bottom: 20px;
+    max-width: 600px;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: #444;
+    padding: 15px;
+    border-radius: 10px;
+    display: block;
+}
+
+/* Game layout styling */
+.simon-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    width: 300px;
+    height: 300px;
+    margin: 20px auto;
+    display: none; /* Hide initially */
+}
+
+/* Button styling */
+.button {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+/* Button colors */
+.green { background-color: green; }
+.red { background-color: red; }
+.yellow { background-color: yellow; }
+.blue { background-color: blue; }
+
+/* Start button styling */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #444;
+    color: white;
+}
+
+button:active {
+    background-color: #666;
+}
+
+/* Status message styling */
+#status {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+}
