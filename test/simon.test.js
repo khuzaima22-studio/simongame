@@ -65,7 +65,7 @@ afterEach(() => {
   });
 
   
-  //Test 4: "This test ensures that the score wil increases when player progress"
+  //Test 3: "This test ensures that the score wil increases when player progress"
   test("Score updates when player progresses", () => {
     startButton.click();
     window.gameSequence = ["green"]; // Mock a level
