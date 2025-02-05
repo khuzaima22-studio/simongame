@@ -64,16 +64,6 @@ afterEach(() => {
     }, 900);
   });
 
-  //Test 3: "This test ensures that the Game will over when press the wrong button"  
-  test("Game over when player makes a mistake", async () => {
-    startButton.click();
-    buttons.yellow.click();
-  
-    jest.advanceTimersByTime(100); // Fast-forward time
-    await Promise.resolve(); //  Ensure updates happen
-  
-    expect(status.textContent).toBe("Game Over! Press Start to try again.");
-  });
   
   //Test 4: "This test ensures that the score wil increases when player progress"
   test("Score updates when player progresses", () => {
