@@ -59,8 +59,8 @@ function nextLevel() {
  * Plays the current sequence by flashing each button in order.
  */
 function playSequence() {
-  let i = 0;
-  const interval = setInterval(() => {
+  let i = 0;        // the colour that flash = 
+  const interval = setInterval(() => {   // is a javascript build in fuction
     const color = gameSequence[i];
     flashButton(color); // Flash the button for the current color
     i++;
@@ -82,9 +82,9 @@ function flashButton(color) {
 
 /**
  * Handles the player's input by checking if the current button matches
- * the game sequence.
+ * the game sequence. "Use to define finctions parameter"
  * @param {string} color - The color of the button the player clicked.
- */
+ */ 
 function handlePlayerInput(color) {
   playerSequence.push(color); // Add the player's input to their sequence
   flashButton(color); // Flash the button to provide visual feedback
